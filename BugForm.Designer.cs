@@ -43,24 +43,26 @@
             this.editReplayBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
             this.playReplayBtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(55, 351);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SubmitButton.Location = new System.Drawing.Point(49, 281);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(112, 35);
+            this.SubmitButton.Size = new System.Drawing.Size(100, 28);
             this.SubmitButton.TabIndex = 21;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // FounderTextBox
             // 
-            this.FounderTextBox.Location = new System.Drawing.Point(237, 298);
-            this.FounderTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FounderTextBox.Location = new System.Drawing.Point(211, 238);
+            this.FounderTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FounderTextBox.Name = "FounderTextBox";
-            this.FounderTextBox.Size = new System.Drawing.Size(148, 26);
+            this.FounderTextBox.Size = new System.Drawing.Size(132, 22);
             this.FounderTextBox.TabIndex = 20;
             // 
             // ErrorStatusDropDown
@@ -70,18 +72,18 @@
             "Not Fixed",
             "In Progress",
             "Fixed"});
-            this.ErrorStatusDropDown.Location = new System.Drawing.Point(237, 252);
-            this.ErrorStatusDropDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ErrorStatusDropDown.Location = new System.Drawing.Point(211, 202);
+            this.ErrorStatusDropDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ErrorStatusDropDown.Name = "ErrorStatusDropDown";
-            this.ErrorStatusDropDown.Size = new System.Drawing.Size(218, 28);
+            this.ErrorStatusDropDown.Size = new System.Drawing.Size(194, 24);
             this.ErrorStatusDropDown.TabIndex = 19;
             // 
             // LineNumberTextBox
             // 
-            this.LineNumberTextBox.Location = new System.Drawing.Point(237, 203);
-            this.LineNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LineNumberTextBox.Location = new System.Drawing.Point(211, 162);
+            this.LineNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LineNumberTextBox.Name = "LineNumberTextBox";
-            this.LineNumberTextBox.Size = new System.Drawing.Size(148, 26);
+            this.LineNumberTextBox.Size = new System.Drawing.Size(132, 22);
             this.LineNumberTextBox.TabIndex = 18;
             // 
             // TypeOfErrorDropDown
@@ -89,116 +91,125 @@
             this.TypeOfErrorDropDown.FormattingEnabled = true;
             this.TypeOfErrorDropDown.Items.AddRange(new object[] {
             "Logic Error"});
-            this.TypeOfErrorDropDown.Location = new System.Drawing.Point(237, 149);
-            this.TypeOfErrorDropDown.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TypeOfErrorDropDown.Location = new System.Drawing.Point(211, 119);
+            this.TypeOfErrorDropDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TypeOfErrorDropDown.Name = "TypeOfErrorDropDown";
-            this.TypeOfErrorDropDown.Size = new System.Drawing.Size(218, 28);
+            this.TypeOfErrorDropDown.Size = new System.Drawing.Size(194, 24);
             this.TypeOfErrorDropDown.TabIndex = 17;
             // 
             // ErrorDescriptionTextBox
             // 
-            this.ErrorDescriptionTextBox.Location = new System.Drawing.Point(237, 34);
-            this.ErrorDescriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ErrorDescriptionTextBox.Location = new System.Drawing.Point(211, 27);
+            this.ErrorDescriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ErrorDescriptionTextBox.Multiline = true;
             this.ErrorDescriptionTextBox.Name = "ErrorDescriptionTextBox";
-            this.ErrorDescriptionTextBox.Size = new System.Drawing.Size(434, 92);
+            this.ErrorDescriptionTextBox.Size = new System.Drawing.Size(386, 74);
             this.ErrorDescriptionTextBox.TabIndex = 16;
             // 
             // FounderLabel
             // 
             this.FounderLabel.AutoSize = true;
-            this.FounderLabel.Location = new System.Drawing.Point(51, 303);
+            this.FounderLabel.Location = new System.Drawing.Point(45, 242);
             this.FounderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FounderLabel.Name = "FounderLabel";
-            this.FounderLabel.Size = new System.Drawing.Size(73, 20);
+            this.FounderLabel.Size = new System.Drawing.Size(65, 17);
             this.FounderLabel.TabIndex = 15;
             this.FounderLabel.Text = "Founder:";
             // 
             // StatusLabel
             // 
             this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Location = new System.Drawing.Point(51, 257);
+            this.StatusLabel.Location = new System.Drawing.Point(45, 206);
             this.StatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(60, 20);
+            this.StatusLabel.Size = new System.Drawing.Size(52, 17);
             this.StatusLabel.TabIndex = 14;
             this.StatusLabel.Text = "Status:";
             // 
             // LineNumberLabel
             // 
             this.LineNumberLabel.AutoSize = true;
-            this.LineNumberLabel.Location = new System.Drawing.Point(51, 208);
+            this.LineNumberLabel.Location = new System.Drawing.Point(45, 166);
             this.LineNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LineNumberLabel.Name = "LineNumberLabel";
-            this.LineNumberLabel.Size = new System.Drawing.Size(103, 20);
+            this.LineNumberLabel.Size = new System.Drawing.Size(93, 17);
             this.LineNumberLabel.TabIndex = 13;
             this.LineNumberLabel.Text = "Line Number:";
             // 
             // TypeOfErrorLabel
             // 
             this.TypeOfErrorLabel.AutoSize = true;
-            this.TypeOfErrorLabel.Location = new System.Drawing.Point(51, 154);
+            this.TypeOfErrorLabel.Location = new System.Drawing.Point(45, 123);
             this.TypeOfErrorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TypeOfErrorLabel.Name = "TypeOfErrorLabel";
-            this.TypeOfErrorLabel.Size = new System.Drawing.Size(104, 20);
+            this.TypeOfErrorLabel.Size = new System.Drawing.Size(96, 17);
             this.TypeOfErrorLabel.TabIndex = 12;
             this.TypeOfErrorLabel.Text = "Type of Error:";
             // 
             // ErrorDescriptionLabel
             // 
             this.ErrorDescriptionLabel.AutoSize = true;
-            this.ErrorDescriptionLabel.Location = new System.Drawing.Point(51, 37);
+            this.ErrorDescriptionLabel.Location = new System.Drawing.Point(45, 30);
             this.ErrorDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ErrorDescriptionLabel.Name = "ErrorDescriptionLabel";
-            this.ErrorDescriptionLabel.Size = new System.Drawing.Size(132, 20);
+            this.ErrorDescriptionLabel.Size = new System.Drawing.Size(119, 17);
             this.ErrorDescriptionLabel.TabIndex = 11;
             this.ErrorDescriptionLabel.Text = "Error Description:";
             // 
             // ErrorBox
             // 
             this.ErrorBox.FormattingEnabled = true;
-            this.ErrorBox.ItemHeight = 20;
-            this.ErrorBox.Location = new System.Drawing.Point(519, 152);
-            this.ErrorBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ErrorBox.ItemHeight = 16;
+            this.ErrorBox.Location = new System.Drawing.Point(461, 122);
+            this.ErrorBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ErrorBox.Name = "ErrorBox";
-            this.ErrorBox.Size = new System.Drawing.Size(294, 224);
+            this.ErrorBox.Size = new System.Drawing.Size(262, 180);
             this.ErrorBox.TabIndex = 22;
+            this.ErrorBox.SelectedIndexChanged += new System.EventHandler(this.ErrorBox_SelectedIndexChanged);
             // 
             // editReplayBtn
             // 
-            this.editReplayBtn.Location = new System.Drawing.Point(374, 351);
-            this.editReplayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.editReplayBtn.Location = new System.Drawing.Point(332, 281);
+            this.editReplayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editReplayBtn.Name = "editReplayBtn";
-            this.editReplayBtn.Size = new System.Drawing.Size(112, 35);
+            this.editReplayBtn.Size = new System.Drawing.Size(100, 28);
             this.editReplayBtn.TabIndex = 23;
             this.editReplayBtn.Text = "Edit Replay";
             this.editReplayBtn.UseVisualStyleBackColor = true;
             // 
             // backBtn
             // 
-            this.backBtn.Location = new System.Drawing.Point(-1, -3);
-            this.backBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backBtn.Location = new System.Drawing.Point(-1, -2);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(112, 35);
+            this.backBtn.Size = new System.Drawing.Size(100, 28);
             this.backBtn.TabIndex = 24;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
             // 
             // playReplayBtn
             // 
-            this.playReplayBtn.Location = new System.Drawing.Point(225, 351);
-            this.playReplayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.playReplayBtn.Location = new System.Drawing.Point(200, 281);
+            this.playReplayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.playReplayBtn.Name = "playReplayBtn";
-            this.playReplayBtn.Size = new System.Drawing.Size(112, 35);
+            this.playReplayBtn.Size = new System.Drawing.Size(100, 28);
             this.playReplayBtn.TabIndex = 25;
             this.playReplayBtn.Text = "Play Replay";
             this.playReplayBtn.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 78);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 26;
+            // 
             // BugForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 420);
+            this.ClientSize = new System.Drawing.Size(755, 336);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.playReplayBtn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.editReplayBtn);
@@ -214,9 +225,10 @@
             this.Controls.Add(this.LineNumberLabel);
             this.Controls.Add(this.TypeOfErrorLabel);
             this.Controls.Add(this.ErrorDescriptionLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BugForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.BugForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,5 +251,6 @@
         private System.Windows.Forms.Button editReplayBtn;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button playReplayBtn;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
