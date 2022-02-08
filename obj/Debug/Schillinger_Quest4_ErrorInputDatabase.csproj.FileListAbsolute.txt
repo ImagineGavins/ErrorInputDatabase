@@ -19,3 +19,7 @@ C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Que
 C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CoreCompileInputs.cache
 C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
 C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Recording.resources
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CopyComplete

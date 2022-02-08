@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillinger_Quest4_ErrorInputDatabase", "Schillinger_Quest4_ErrorInputDatabase.csproj", "{B1140629-A248-490F-B5C7-943AD83BCC62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F52AA97E-180A-40ED-8F2B-09080171D6C7} = {F52AA97E-180A-40ED-8F2B-09080171D6C7}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.UserActivityMonitor", "Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj", "{F52AA97E-180A-40ED-8F2B-09080171D6C7}"
 EndProject
