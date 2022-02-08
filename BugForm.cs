@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Schillinger_Quest4_ErrorInputDatabase
 {
-    public partial class Form1 : Form
+    public partial class BugForm : Form
     {
-        public Form1()
+        public BugForm()
         {
             InitializeComponent();
+        }
+
+        public BugForm(string bugName)
+        {
+            InitializeComponent();
+            //Opens with this file selected
         }
     }
 }

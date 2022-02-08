@@ -14,15 +14,17 @@ namespace Schillinger_Quest4_ErrorInputDatabase
     public partial class Recording : Form
     {
         #region fields
+        public static Recording recording;
+        BugForm bugForm;
+
         XML xmlFile = new XML();
         XML session;
 
         Timer timer;
         int count = 0;
 
-        string bugName = "bug";
-
         XML lastEvent = null;
+
         #endregion
 
         #region Properties
@@ -68,8 +70,20 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         public Recording()
         {
             InitializeComponent();
+            Singleton();
             stopRecordingBtn.Enabled = false;
             stopRecordingBtn.Visible = false;
+        }
+
+        private void Singleton()
+        {
+            if(recording == null)
+            {
+                recording = this;
+            } else
+            {
+                this.Close();
+            }
         }
 
         private void stopRecordingBtn_Click(object sender, EventArgs e)
@@ -125,7 +139,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
 
         private void Recording_FormClosing(object sender, FormClosingEventArgs e)
         {
-            xmlFile.ExportXML(bugName + ".XML");
+            //xmlFile.ExportXML(bugName + ".XML");
         }
         #endregion
 
@@ -199,5 +213,11 @@ namespace Schillinger_Quest4_ErrorInputDatabase
 
         #endregion
 
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            bugForm = new BugForm();
+            bugForm.Show();
+            this.Hide();
+        }
     }
 }
