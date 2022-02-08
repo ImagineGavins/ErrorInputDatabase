@@ -1,0 +1,7 @@
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csproj.CoreCompileInputs.cache
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\patri\OneDrive\Desktop\globalhook2_src\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csproj.AssemblyReference.cache

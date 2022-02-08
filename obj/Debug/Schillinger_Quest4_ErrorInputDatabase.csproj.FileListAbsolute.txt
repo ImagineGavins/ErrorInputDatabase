@@ -8,3 +8,14 @@ C:\Code\SoftwareDev&QualityAss\Schillinger_Quest4_ErrorInputDatabase\obj\Debug\S
 C:\Code\SoftwareDev&QualityAss\Schillinger_Quest4_ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CoreCompileInputs.cache
 C:\Code\SoftwareDev&QualityAss\Schillinger_Quest4_ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
 C:\Code\SoftwareDev&QualityAss\Schillinger_Quest4_ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.exe.config
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.AssemblyReference.cache
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Form1.resources
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Form2.resources
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Properties.Resources.resources
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.GenerateResource.cache
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CoreCompileInputs.cache
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
+C:\Users\patri\OneDrive\Desktop\DTS\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
