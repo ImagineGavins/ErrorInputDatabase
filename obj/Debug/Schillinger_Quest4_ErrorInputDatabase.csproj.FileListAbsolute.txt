@@ -42,3 +42,22 @@ D:\Code\New folder\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDat
 D:\Code\New folder\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CopyComplete
 D:\Code\New folder\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
 D:\Code\New folder\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.exe.config
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Google.Protobuf.dll
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\BouncyCastle.Crypto.dll
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Ubiety.Dns.Core.dll
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Renci.SshNet.dll
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Code\ErrorInputRecording\ErrorInputDatabase\bin\Debug\MySql.Data.xml
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csprojAssemblyReference.cache
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.BugForm.resources
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Properties.Resources.resources
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.Recording.resources
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.GenerateResource.cache
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CoreCompileInputs.cache
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.csproj.CopyComplete
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.exe
+C:\Code\ErrorInputRecording\ErrorInputDatabase\obj\Debug\Schillinger_Quest4_ErrorInputDatabase.pdb
