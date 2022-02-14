@@ -12,19 +12,37 @@ using MySql.Data.MySqlClient;
 
 namespace Schillinger_Quest4_ErrorInputDatabase
 {
+    /*FlowerBox
+     * Editor: Patrick Naatz
+     * Added multiple constructors for the multiple ways of entry into the bug form
+     * Added back button functionality
+     */
+
     public partial class BugForm : Form
     {
+
+        #region constructors
+        /// <summary>
+        /// This constructor will open the bug form with the intention of creating a new entry to the bug database
+        /// </summary>
         public BugForm()
         {
             InitializeComponent();
             fill_listbox();
         }
 
+        /// <summary>
+        /// Bug name should be a known bug in the data base.
+        /// This constructor will automatically fill the bug form with passed in variable
+        /// </summary>
+        /// <param name="bugName"></param>
         public BugForm(string bugName)
         {
             InitializeComponent();
-            //Opens with this file selected
+            fill_listbox();
+
         }
+        #endregion
 
         #region ~Buttons~
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -194,6 +212,12 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         private void BugForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Recording.recording.Show();
+            this.Close(); //Note this form must be closed in order to open with a selected bug or new bug
         }
     }
 }

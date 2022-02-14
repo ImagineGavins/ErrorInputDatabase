@@ -161,6 +161,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Enabled = false;
             this.btnEdit.Location = new System.Drawing.Point(131, 405);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
@@ -176,9 +177,11 @@
             this.backBtn.TabIndex = 24;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // btnPlay
             // 
+            this.btnPlay.Enabled = false;
             this.btnPlay.Location = new System.Drawing.Point(212, 405);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
@@ -266,7 +269,7 @@
             this.Controls.Add(this.TypeOfErrorLabel);
             this.Controls.Add(this.ErrorDescriptionLabel);
             this.Name = "BugForm";
-            this.Text = "Form2";
+            this.Text = "Bug Form";
             this.Load += new System.EventHandler(this.BugForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

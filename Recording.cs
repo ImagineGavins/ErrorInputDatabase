@@ -11,6 +11,11 @@ using Gma.UserActivityMonitor;
 
 namespace Schillinger_Quest4_ErrorInputDatabase
 {
+
+    /*FloowerBox
+     * Programmer Patrick Naatz
+     * Intention: Make the default form to record and pass data through to the BugForm window
+     */
     public partial class Recording : Form
     {
         #region fields
@@ -59,14 +64,6 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         }
         #endregion
 
-        enum Status
-        {
-            Not_Recording,
-            Recording
-        }
-
-        Status status = Status.Not_Recording;
-
         public Recording()
         {
             InitializeComponent();
@@ -86,18 +83,43 @@ namespace Schillinger_Quest4_ErrorInputDatabase
             }
         }
 
+        #region button events
         private void stopRecordingBtn_Click(object sender, EventArgs e)
         {
-            status = Status.Not_Recording;
             ToggleButtons();
+            RemoveEvents();
+            reportBtn.Enabled = true;
+            viewBugBtn.Enabled = true;
         }
 
         private void recordBtn_Click(object sender, EventArgs e)
         {
-            status = Status.Recording;
             ToggleButtons();
+            AddEvents();
+            reportBtn.Enabled = false;
+            viewBugBtn.Enabled = false;
         }
 
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            bugForm = new BugForm();
+            bugForm.Show();
+            xmlFile.ExportXML("newBug.XML");
+            this.Hide();
+        }
+
+        private void viewBugBtn_Click(object sender, EventArgs e)
+        {
+            string bugName = ""; //fill this in with most recent bug
+            bugForm = new BugForm(bugName);
+            bugForm.Show();
+            this.Hide();
+        }
+        #endregion
+
+        #region Helper Methods
+
+        #region Toggle Buttons
         private void ToggleButtons()
         {
             ToggleButton(recordBtn);
@@ -109,9 +131,8 @@ namespace Schillinger_Quest4_ErrorInputDatabase
             btn.Enabled = !btn.Enabled;
             btn.Visible = !btn.Visible;
         }
+        #endregion
 
-
-        #region Helper Methods
         XML getNewEventXML()
         {
             timer.Stop();
@@ -212,12 +233,5 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         #endregion
 
         #endregion
-
-        private void reportBtn_Click(object sender, EventArgs e)
-        {
-            bugForm = new BugForm();
-            bugForm.Show();
-            this.Hide();
-        }
     }
 }
