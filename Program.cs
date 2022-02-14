@@ -16,7 +16,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BugForm());
+            Application.Run(new Recording());
         }
     }
 }

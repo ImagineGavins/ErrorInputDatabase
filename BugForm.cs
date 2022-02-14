@@ -31,7 +31,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             try // Temporary connection checking
             {
-                string myConnection = "datasource=localhost;port=6210;username=root;password=root;";
+                string myConnection = "datasource=localhost;port=3306;username=root;password=root;";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 string query = "insert into errorinput.errors(errorID, errorDescription, errorType, lineNumber, errorStatus, errorFounder) values ('"
@@ -68,7 +68,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             try // Temporary connection checking
             {
-                string myConnection = "datasource=localhost;port=6210;username=root;password=root;";
+                string myConnection = "datasource=localhost;port=3306;username=root;password=root;";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 string query = "update errorinput.errors set errorID='"
@@ -106,32 +106,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             try
             {
-                string myConnection = "datasource=localhost;port=6210;username=root;password=root;";
-                MySqlConnection myConn = new MySqlConnection(myConnection);
 
-                MySqlCommand cmdDataBase = new MySqlCommand();
-
-                string SQL;
-                UInt32 FileSize;
-                byte[] rawData;
-                FileStream fs;
-
-                string FileName = txtErrorReplay.Text;
-
-                fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-                FileSize = (uint)fs.Length;
-
-                rawData = new byte[FileSize];
-                fs.Read(rawData, 0, (int)FileSize);
-                fs.Close();
-
-                myConn.Open();
-
-                SQL = "update errorinput.inputs set errorInputs=" + rawData + " where errorID='" + this.txtID.Text + "';";
-
-                MessageBox.Show("Error Replay Uploaded!");
-
-                myConn.Close();
             }
             catch (Exception ex)
             {
@@ -146,7 +121,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             try
             {
-                string myConnection = "datasource=localhost;port=6210;username=root;password=root;";
+                string myConnection = "datasource=localhost;port=3306;username=root;password=root;";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 string query = "select * from errorinput.errors";
@@ -178,7 +153,7 @@ namespace Schillinger_Quest4_ErrorInputDatabase
         {
             try 
             {
-                string myConnection = "datasource=localhost;port=6210;username=root;password=root;";
+                string myConnection = "datasource=localhost;port=3306;username=root;password=root;";
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 string query = "select * from errorinput.errors where errorDescription='" + errorList.Text + "';";
@@ -192,11 +167,13 @@ namespace Schillinger_Quest4_ErrorInputDatabase
 
                 while(myReader.Read())
                 {
+                    string errorID = myReader.GetString("errorID");
                     string errorDesc = myReader.GetString("errorDescription");
                     string errorType = myReader.GetString("errorType");
                     int errorLine = myReader.GetInt32("lineNumber");
                     string errorStatus = myReader.GetString("errorStatus");
                     string errorFounder = myReader.GetString("errorFounder");
+                    txtID.Text = errorID;
                     txtDescription.Text = errorDesc;
                     dropErrorType.SelectedItem = errorType;
                     txtLineNumber.Text = errorLine.ToString();
